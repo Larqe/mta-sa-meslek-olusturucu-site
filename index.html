@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MTA Meslek Script Oluşturucu</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <form id="meslekForm" style="text-align: center;">
+        <h1>MTA SA Script Oluşturucu</h1>
+        <div class = "container">    
+
+            <input type="text" id="serverName" class = "textt" placeholder="Sunucu Adını gir">
+            <input type="text" id="jobName" class = "textt" placeholder="Meslek İsmi">
+            <input type="text" id="itemid" class = "textt" placeholder="Oyuncuya Verilecek İtem">
+            <input type="text" id="meslekkomut" class = "textt" placeholder="Meslekin Komutunu Yaz">
+            <input type="text" id="itemsystemexports" class = "textt" placeholder="İtems sc Örnek = exports.item-system">
+            <input type="text" id="globalsystemexports" class = "textt" placeholder="Glocal SC Örnek = exports.global">
+            <input type="text" id="para" class = "textt" placeholder="Meslek Parası">
+            <input type="text" id="toplamaalan" class = "textt" placeholder="Toplama Alanı = x,y,z">
+            <input type="text" id="toplamasure" class = "textt" placeholder="Toplama Süresi">
+            <input type="text" id="toplamaanim" class = "textt" placeholder="Toplama Animasyon">
+            <input type="text" id="satmaalan" class = "textt" placeholder="Satma Alanı Örnek = x,y,z">
+            <input type="text" id="satmasure" class = "textt" placeholder="Satma Süresi">
+            <input type="text" id="satmaanim" class = "textt" placeholder="Satma Animasyonu">
+    
+            <button type="button" onclick="generateScript()">Oluştur</button> 
+            <button type="button" onclick="anim()">Animasyon Listesi</button>
+
+        </div>
+       
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
